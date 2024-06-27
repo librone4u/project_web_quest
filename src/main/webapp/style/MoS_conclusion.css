@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 1.5em;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
