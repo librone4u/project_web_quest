@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="style/MoS_Welcome.css">
+    <link rel="stylesheet" href="/style/MoS_welcome.css">
     <title>Mansion of secrets</title>
 </head>
 <body>

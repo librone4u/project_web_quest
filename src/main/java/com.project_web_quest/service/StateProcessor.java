@@ -4,13 +4,13 @@ public class StateProcessor {
     public static String linkToJsp(String state){
         switch(state){
             case "welcome" -> {
-                return "/MoSWelcome.jsp";
+                return "/MoS/MoS_welcome.jsp";
             }
             case "playing", "start" -> {
-                return "/MansionOfSecrets.jsp";
+                return "/MoS/MoS.jsp";
             }
             case "conclusion" -> {
-                return "/conclusion.jsp";
+                return "/MoS/MoS_conclusion.jsp";
             }
             default -> {
                 return "/error.jsp";
