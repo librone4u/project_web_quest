@@ -1,10 +1,10 @@
 package com.project_web_quest.controller;
 
-import com.project_web_quest.games.mansionOfSecrets.ConclusionBase;
-import com.project_web_quest.games.mansionOfSecrets.QuestionBase;
-import com.project_web_quest.model.GameElement;
+import com.project_web_quest.games_base_question.mansion_of_sercrets.ConclusionBase;
 import com.project_web_quest.model.Question;
 import com.project_web_quest.service.StateProcessor;
+import com.project_web_quest.games_base_question.mansion_of_sercrets.QuestionBase;
+import com.project_web_quest.model.GameElement;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

@@ -1,4 +1,4 @@
-<%@ page import="com.project_web_quest.games.mansionOfSecrets.ConclusionBase" %>
+<%@ page import="com.project_web_quest.games_base_question.mansion_of_sercrets.ConclusionBase" %>
 <%@ page import="com.project_web_quest.model.Conclusion" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%

@@ -1,7 +1,7 @@
-package com.project_web_quest.games.mansionOfSecrets;
+package com.project_web_quest.games_base_question.mansion_of_sercrets;
 
-import com.project_web_quest.model.GameElement;
 import com.project_web_quest.model.Question;
+import com.project_web_quest.model.GameElement;
 
 import java.util.HashMap;
 import java.util.Map;
