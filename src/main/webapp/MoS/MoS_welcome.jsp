@@ -2,24 +2,24 @@
 <html>
 <head>
     <link rel="stylesheet" href="/style/MoS_welcome.css">
-    <title>Mansion of secrets</title>
+    <title>Mansion of Secrets</title>
 </head>
 <body>
 <div class="container">
-    <h1>Тайна заброшенного особняка</h1>
+    <h1>The Mystery of the Abandoned Mansion</h1>
     <p>
-        Много лет назад на окраине небольшого городка стоял величественный особняк, принадлежавший богатому и влиятельному семейству Деверо. Семейство жило в роскоши и славе, но однажды, в одну роковую ночь, вся семья бесследно исчезла. Особняк остался пустовать, а его великолепие со временем превратилось в руины. Городок начал обрастать слухами и легендами о проклятии, наложенном на дом и его окрестности.
+        Many years ago, on the outskirts of a small town, there stood a majestic mansion belonging to the wealthy and influential Devereaux family. The family lived in luxury and fame, but one fateful night, the entire family vanished without a trace. The mansion was left deserted, and its splendor gradually turned into ruins. The town began to be enveloped in rumors and legends about a curse placed on the house and its surroundings.
     </p>
     <p>
-        Жители городка утверждают, что по ночам из особняка доносятся странные звуки и свечение, будто бы сам дом пытается рассказать свою мрачную историю. Ходят слухи, что в стенах особняка спрятаны несметные богатства семьи Деверо, а также древние артефакты, обладающие невероятной силой. Но каждый, кто пытался проникнуть в особняк, либо не возвращался, либо возвращался со странными историями и в состоянии шока.
+        The town's residents claim that at night, strange sounds and lights come from the mansion, as if the house itself is trying to tell its dark story. Rumors say that within the mansion's walls are hidden the immense riches of the Devereaux family, as well as ancient artifacts possessing incredible power. But anyone who tried to enter the mansion either never returned or came back with strange stories and in a state of shock.
     </p>
     <p>
-        Ты, молодой и амбициозный исследователь паранормальных явлений, всегда был очарован тайнами и загадками. Узнав об особняке Деверо, ты решаешь отправиться туда, чтобы разгадать его тайну и, возможно, найти скрытые сокровища. Подготовив необходимое оборудование и набравшись смелости, ты отправляешься к заброшенному особняку.
+        You, a young and ambitious paranormal investigator, have always been fascinated by mysteries and enigmas. Upon learning about the Devereaux mansion, you decide to go there to uncover its secret and perhaps find the hidden treasures. Equipped with the necessary gear and full of courage, you set off for the abandoned mansion.
     </p>
     <p>
-        Ты стоишь у его ворот, глядя на заросшие кустарники и полуразрушенные стены, и чувствуешь, как холодок пробегает по спине. Теперь тебе предстоит сделать выбор, который определит твою судьбу. Сможешь ли ты разгадать тайну исчезнувшего семейства Деверо и выбраться живым из этого мрачного места, или же станешь одной из множества легенд, окружающих этот загадочный особняк?
+        You stand at its gates, looking at the overgrown shrubs and partially collapsed walls, feeling a chill run down your spine. Now you must make a choice that will determine your fate. Will you be able to uncover the mystery of the vanished Devereaux family and escape this eerie place alive, or will you become one of the many legends surrounding this enigmatic mansion?
     </p>
-    <button class="start-button" onclick="startGame()">Начать игру</button>
+    <button class="start-button" onclick="startGame()">Start Game</button>
 </div>
 <script>
     function startGame() {

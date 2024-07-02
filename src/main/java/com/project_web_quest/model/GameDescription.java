@@ -11,9 +11,9 @@ public class GameDescription {
     private boolean isAccess = true;
     public String isReadyForPlay(){
         if(this.isAccess){
-            return "Играть";
+            return "Play";
         }else{
-            return "Недоступно";
+            return "Unavailable";
         }
     }
 }
