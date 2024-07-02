@@ -1,5 +1,6 @@
 package com.project_web_quest.games_base_question.mansion_of_sercrets;
 
+import com.project_web_quest.games_base_question.Database;
 import com.project_web_quest.model.Conclusion;
 import com.project_web_quest.model.GameElement;
 
@@ -7,7 +8,7 @@ import java.net.URI;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ConclusionBase implements Database{
+public class ConclusionBase implements Database {
     private static ConclusionBase instance;
     private static Map<String, GameElement> mapOfConclusion;
     public static ConclusionBase getInstance() {

@@ -1,4 +1,4 @@
-package com.project_web_quest.games_base_question.mansion_of_sercrets;
+package com.project_web_quest.games_base_question;
 
 import com.project_web_quest.model.GameElement;
 
