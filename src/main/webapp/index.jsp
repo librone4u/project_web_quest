@@ -1,6 +1,7 @@
 <%@ page import="com.project_web_quest.games_base_question.GamesBase" %>
 <%@ page import="com.project_web_quest.model.GameDescription" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.project_web_quest.constants.State_Constants" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     GamesBase base = GamesBase.getInstance();
@@ -31,7 +32,7 @@
     <%}%>
     <script>
         function play(link){
-            <%session.setAttribute("state", "welcome");%>
+            <%session.setAttribute("state", State_Constants.WELCOME);%>
             window.location.href = link;
         }
     </script>
