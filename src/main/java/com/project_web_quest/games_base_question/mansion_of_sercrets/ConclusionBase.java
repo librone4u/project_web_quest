@@ -22,50 +22,50 @@ public class ConclusionBase implements Database {
     private static void createMap() {
         mapOfConclusion = new HashMap<>();
 
-        mapOfConclusion.put(Callback_Constants.HELP_WITH_KNOWLEDGE, new Conclusion("Освобождение душ", "Ты не колеблясь решаешь помочь душам семьи Деверо. " +
-                "Ты следуешь инструкциям, которые ты узнал из древних записей," +
-                " и начинаешь проводить ритуал. Алтарь замирает в мистическом свете, " +
-                "и воздух наполняется напряжением. Духи начинают мерцать ярче, " +
-                "и ты чувствуешь, как они находятся на грани освобождения.\n" +
+        mapOfConclusion.put(Callback_Constants.HELP_WITH_KNOWLEDGE, new Conclusion("Liberation of Souls", "Without hesitation, you decide to help the souls of the Devereaux family. " +
+                "You follow the instructions you learned from ancient records," +
+                " and begin to perform the ritual. The altar is enveloped in a mystical light, " +
+                "and the air is filled with tension. The spirits start to shimmer more brightly, " +
+                "and you sense that they are on the verge of liberation.\n" +
                 "\n" +
-                "Семья Деверо тихо шепчет благодарность, касаясь твоего сознания без слов." +
-                " Их образы медленно растворяются в воздухе," +
-                " оставляя за собой чувство благодарности и мирного покоя." +
-                " Алтарь, вокруг которого сосредоточено столько тайн и силы," +
-                " постепенно разрушается, как будто его задача была выполнена.\n" +
+                "The Devereaux family whispers their gratitude softly, touching your mind without words." +
+                " Their images slowly dissolve into the air," +
+                " leaving behind a feeling of gratitude and peaceful calm." +
+                " The altar, around which so many mysteries and powers are centered," +
+                " gradually disintegrates as if its task has been completed.\n" +
                 "\n" +
-                "Ты покидает комнату, ощущая смешанные эмоции:" +
-                " гордость за свои действия и грусть об ушедших душах." +
-                " Возвращаясь на поверхность, ты знаешь, что освободил не только семью Деверо," +
-                " но и себя от тяжкого бремени их проклятия.", URI.create("/photo/library.jpeg")));
+                "You leave the room, feeling mixed emotions:" +
+                " pride for your actions and sadness for the departed souls." +
+                " Returning to the surface, you know that you have freed not only the Devereaux family," +
+                " but also yourself from the heavy burden of their curse.", URI.create("/photo/library.jpeg")));
 
-        mapOfConclusion.put(Callback_Constants.HELP_WITHOUT_KNOWLEDGE, new Conclusion("Неудачное спасение", "Ты начинаешь выполнять ритуал, как описано в дневнике." +
-                " Но твои знания оказываются неполными, и что-то идет не так." +
-                " Проклятие начинает усиливаться, и духи Деверо начинают превращаться в темные тени, испускающие ужасные крики." +
-                "Ты понимаешь, что сделал ошибку, не подготовившись должным образом. Твои попытки оказать помощь только усиливают мощь проклятия." +
-                " Силы особняка начинают буквально рушиться вокруг тебя, и ты понимаешь, что это конец." +
-                "Так завершается твое приключение в особняке Деверо, где ты попытался помочь без достаточных знаний и подготовки." +
-                " Твоя решимость обернулась трагедией, и теперь твоя судьба стала частью бесконечного проклятия," +
-                " которое бережно охраняет заброшенный особняк Деверо.", URI.create("/photo/library.jpeg")));
+        mapOfConclusion.put(Callback_Constants.HELP_WITHOUT_KNOWLEDGE, new Conclusion("Unsuccessful Rescue", "You begin performing the ritual as described in the journal." +
+                " But your knowledge is incomplete, and something goes wrong." +
+                " The curse starts to intensify, and the Devereaux spirits begin to turn into dark shadows, emitting terrible screams." +
+                "You realize you made a mistake by not preparing properly. Your attempts to help only strengthen the power of the curse." +
+                " The forces of the mansion literally start to collapse around you, and you understand that this is the end." +
+                "Thus concludes your adventure in the Devereaux mansion, where you tried to help without sufficient knowledge and preparation." +
+                " Your determination turned into tragedy, and now your fate has become part of the endless curse," +
+                " which is carefully guarded by the abandoned Devereaux mansion.", URI.create("/photo/library.jpeg")));
 
-        mapOfConclusion.put(Callback_Constants.GET_BACK, new Conclusion("Проклятие возрождается", "Решив отложить ритуал и вернуться" +
-                " на поверхность, ты чувствуешь, как образы духов семьи Деверо становятся нестабильными и зловещими." +
-                " Они не понимают, почему ты не помогаешь им, и начинают искажаться, их обличья становятся искаженными " +
-                "от гнева и обиды.\n" +
+        mapOfConclusion.put(Callback_Constants.GET_BACK, new Conclusion("The Curse Revives", "Deciding to postpone the ritual and return" +
+                " to the surface, you feel the images of the Devereaux family spirits becoming unstable and sinister." +
+                " They do not understand why you are not helping them and begin to distort, their forms becoming twisted" +
+                " with anger and resentment.\n" +
                 "\n" +
-                "Алтарь начинает излучать темные силы, и ты осознаешь, что проклятие начинает охватывать не только духов," +
-                " но и тебя самого. Ты пытаешься бежать из комнаты, но дверь закрывается за тобой, и ты осознаешь," +
-                " что теперь в ловушке среди мрачных стен особняка.\n" +
+                "The altar starts to emit dark forces, and you realize that the curse is starting to envelop not only the spirits," +
+                " but you as well. You try to flee the room, but the door closes behind you, and you realize" +
+                " that you are now trapped within the gloomy walls of the mansion.\n" +
                 "\n" +
-                "С каждой секундой проклятие все сильнее охватывает тебя, ты слышишь голоса и видишь тени," +
-                " но не можешь понять, что реально, а что нет. Время теряет свой смысл, и ты понимаешь," +
-                " что твоя судьба теперь связана с этим местом навсегда.", URI.create("/photo/library.jpeg")));
+                "With each passing second, the curse engulfs you more, you hear voices and see shadows," +
+                " but cannot discern what is real and what is not. Time loses its meaning, and you understand" +
+                " that your fate is now forever tied to this place.", URI.create("/photo/library.jpeg")));
 
 
-        mapOfConclusion.put(Callback_Constants.CALL_FOR_HELP, new Conclusion("Неудачное расследование", "Ты решаешь вернуться на поверхность и рассказать о своих находках специалистам." +
-                " Однако, как только ты выходишь из подвала, дверь за тобой захлопывается, и особняк начинает разрушаться." +
-                " Ты едва успеваешь выбраться на улицу. Позже, исследовательская группа, которой ты сообщил о своих находках," +
-                " не находит ничего в руинах особняка, и твои слова воспринимаются как выдумка. Тебя все начали считать психически больным.", URI.create("/photo/library.jpeg")));
+        mapOfConclusion.put(Callback_Constants.CALL_FOR_HELP, new Conclusion("Unsuccessful Investigation", "You decide to return to the surface and report your findings to the experts." +
+                " However, as soon as you leave the basement, the door slams shut behind you, and the mansion begins to collapse." +
+                " You barely manage to escape outside. Later, the research team you informed about your findings" +
+                " finds nothing in the ruins of the mansion, and your words are dismissed as fabrication. Everyone starts to consider you mentally ill.", URI.create("/photo/library.jpeg")));
     }
     @Override
     public Map<String, GameElement> getMap() {
