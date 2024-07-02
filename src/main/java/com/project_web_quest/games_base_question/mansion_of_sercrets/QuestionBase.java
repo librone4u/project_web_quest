@@ -1,5 +1,6 @@
 package com.project_web_quest.games_base_question.mansion_of_sercrets;
 
+import com.project_web_quest.constants.Callback_Constants;
 import com.project_web_quest.games_base_question.Database;
 import com.project_web_quest.model.Question;
 import com.project_web_quest.model.GameElement;
@@ -24,15 +25,15 @@ public class QuestionBase implements Database {
         mapOfQuestions = new HashMap<>();
 
         Map<String, String> answers = new HashMap<>();
-        answers.put("enterTheDoor", "Войти через парадную дверь.");
-        answers.put("goAround" , "Обойти особняк ");
-        mapOfQuestions.put("start", new Question("Ты стоишь у ворот старого заброшенного особняка." +
+        answers.put(Callback_Constants.ENTER_THE_DOOR, "Войти через парадную дверь.");
+        answers.put(Callback_Constants.GO_AROUND , "Обойти особняк ");
+        mapOfQuestions.put(Callback_Constants.START, new Question("Ты стоишь у ворот старого заброшенного особняка." +
                 " Вокруг — густой лес, и тишину нарушает только ветер, гуляющий среди деревьев.", answers));
 
         answers = new HashMap<>();
-        answers.put("exploreLibrary", "Осмотреть библиотеку на первом этаже.");
-        answers.put("secondFloor" , "Подняться на второй этаж.");
-        mapOfQuestions.put("enterTheDoor", new Question("Ты входишь в заброшенный особняк Деверо," +
+        answers.put(Callback_Constants.EXPLORE_LIBRARY, "Осмотреть библиотеку на первом этаже.");
+        answers.put(Callback_Constants.SECOND_FLOOR , "Подняться на второй этаж.");
+        mapOfQuestions.put(Callback_Constants.ENTER_THE_DOOR, new Question("Ты входишь в заброшенный особняк Деверо," +
                 " наполненный мрачной атмосферой и таинственностью. Внутри царит мрак," +
                 " и только твой фонарь освещает путь по темным коридорам и залам." +
                 " Ты чувствуешь, как воздух насыщен зловещей энергией," +
@@ -40,34 +41,34 @@ public class QuestionBase implements Database {
                 " Ты решаешь исследовать каждый уголок особняка, чтобы раскрыть его тайны.", answers));
 
         answers = new HashMap<>();
-        answers.put("enterTheAjarDoor", "Зайти в приоткрытую дверь.");
-        answers.put("enterTheDoor" , "Вернуться назад");
-        mapOfQuestions.put("secondFloor", new Question("Ты поднимаешься по полуразрушенной лестнице на второй этаж особняка." +
+        answers.put(Callback_Constants.ENTER_THE_AJAR_DOOR, "Зайти в приоткрытую дверь.");
+        answers.put(Callback_Constants.ENTER_THE_DOOR , "Вернуться назад");
+        mapOfQuestions.put(Callback_Constants.SECOND_FLOOR, new Question("Ты поднимаешься по полуразрушенной лестнице на второй этаж особняка." +
                 " Здесь тишина нарушена только скрипом деревянных перил и твоими шагами по полу," +
                 " покрытому слоем пыли. Проходя мимо разбитых окон и забытых мебельных предметов," +
                 " ты замечаешь приоткрытую дверь на конце коридора.", answers));
 
         answers = new HashMap<>();
-        answers.put("enterVault", "Войти в подвал.");
-        answers.put("start" , "Вернуться назад.");
-        mapOfQuestions.put("goAround", new Question("Ты обходишь особняк и находишь старую деревянную дверь, которая ведет в подвал.", answers));
+        answers.put(Callback_Constants.ENTER_VAULT, "Войти в подвал.");
+        answers.put(Callback_Constants.START , "Вернуться назад.");
+        mapOfQuestions.put(Callback_Constants.GO_AROUND, new Question("Ты обходишь особняк и находишь старую деревянную дверь, которая ведет в подвал.", answers));
 
         answers = new HashMap<>();
-        answers.put("exploreVault", "Исследовать дальше в подвале.");
-        answers.put("callForHelp" , "Подняться обратно на поверхность и позвать помощь.");
+        answers.put(Callback_Constants.EXPLORE_VAULT, "Исследовать дальше в подвале.");
+        answers.put(Callback_Constants.CALL_FOR_HELP , "Подняться обратно на поверхность и позвать помощь.");
         mapOfQuestions.put("enterVault", new Question("Ты спускаешься в низ. " +
                 "В подвале ты находишь старинные документы и дневник, рассказывающий о том," +
                 "что семья Деверо занималась черной магией и попала в ловушку собственного заклинания.", answers));
         answers = new HashMap<>();
-        answers.put("getBack", "Вернуться назад");
-        mapOfQuestions.put("exploreVault", new Question("Ты заходишь в тайную комнату. " +
+        answers.put(Callback_Constants.GET_BACK, "Вернуться назад");
+        mapOfQuestions.put(Callback_Constants.EXPLORE_VAULT, new Question("Ты заходишь в тайную комнату. " +
                 "В комнате ты видишь алтарь с древними артефактами и надписями на странном языке." +
                 " Изучив их, ты понимаешь, что нашел центр проклятия." +
                 "Внезапно духи семьи Деверо появляются перед тобой, умоляя помочь им.", answers));
         answers = new HashMap<>();
-        answers.put("searchClues", "Искать подсказки о ритуале в записях.");
-        answers.put("exploreVault", "Спуститься в подвал с новыми знаниями.");
-        mapOfQuestions.put("enterTheAjarDoor", new Question("Ты открываешь дверь и заходишь в маленькую комнату," +
+        answers.put(Callback_Constants.SEARCH_CLUES, "Искать подсказки о ритуале в записях.");
+        answers.put(Callback_Constants.EXPLORE_VAULT, "Спуститься в подвал с новыми знаниями.");
+        mapOfQuestions.put(Callback_Constants.ENTER_THE_AJAR_DOOR, new Question("Ты открываешь дверь и заходишь в маленькую комнату," +
                 " затерянную во времени. В углу ты видишь старый письменный стол, покрытый пылью и паутиной." +
                 " На столе лежит замшелая книга с выгоревшими страницами." +
                 "Ты начинаешь изучать записи, оставленные здесь, и понимаешь, что это дневник матери Деверо." +
@@ -75,16 +76,16 @@ public class QuestionBase implements Database {
                 " В ее записях упоминается об алтаре в подвале, который служит фокусом зла.", answers));
 
         answers = new HashMap<>();
-        answers.put("enterVault","Спуститься в подвал");
-        mapOfQuestions.put("searchClues", new Question("Ты изучаешь записи и находишь подсказки о ритуале," +
+        answers.put(Callback_Constants.ENTER_VAULT,"Спуститься в подвал");
+        mapOfQuestions.put(Callback_Constants.SEARCH_CLUES, new Question("Ты изучаешь записи и находишь подсказки о ритуале," +
                 " который мог бы разрушить проклятие. В дневнике матери указаны необходимые компоненты и шаги," +
                 " которые необходимо выполнить. Ты чувствуешь, что пришло время спуститься в подвал и попытаться" +
                 " освободить семью Деверо от их мучений.", answers));
 
         answers = new HashMap<>();
-        answers.put("secondFloor", "Подняться на второй этаж");
-        answers.put("goAround", "Обойти особняк");
-        mapOfQuestions.put("exploreLibrary", new Question("Ты находишь старинную библиотеку, полную пыльных и изорванных книг." +
+        answers.put(Callback_Constants.SECOND_FLOOR, "Подняться на второй этаж");
+        answers.put(Callback_Constants.GO_AROUND, "Обойти особняк");
+        mapOfQuestions.put(Callback_Constants.EXPLORE_LIBRARY, new Question("Ты находишь старинную библиотеку, полную пыльных и изорванных книг." +
                 " Среди них ты обнаруживаешь дневник старшего сына Деверо." +
                 " В нем он описывает свои исследования черной магии и первые признаки проклятия, которое погубило их семью." +
                 " Решив изучить записи подробнее, ты обнаруживаешь, что ключ к разгадке проклятия скрыт в подвале на заднем дворе.", answers));

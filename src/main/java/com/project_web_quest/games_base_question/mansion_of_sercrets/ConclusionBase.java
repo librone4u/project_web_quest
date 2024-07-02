@@ -1,5 +1,6 @@
 package com.project_web_quest.games_base_question.mansion_of_sercrets;
 
+import com.project_web_quest.constants.Callback_Constants;
 import com.project_web_quest.games_base_question.Database;
 import com.project_web_quest.model.Conclusion;
 import com.project_web_quest.model.GameElement;
@@ -21,7 +22,7 @@ public class ConclusionBase implements Database {
     private static void createMap() {
         mapOfConclusion = new HashMap<>();
 
-        mapOfConclusion.put("help", new Conclusion("Освобождение душ", "Ты не колеблясь решаешь помочь душам семьи Деверо. " +
+        mapOfConclusion.put(Callback_Constants.HELP_WITH_KNOWLEDGE, new Conclusion("Освобождение душ", "Ты не колеблясь решаешь помочь душам семьи Деверо. " +
                 "Ты следуешь инструкциям, которые ты узнал из древних записей," +
                 " и начинаешь проводить ритуал. Алтарь замирает в мистическом свете, " +
                 "и воздух наполняется напряжением. Духи начинают мерцать ярче, " +
@@ -38,7 +39,7 @@ public class ConclusionBase implements Database {
                 " Возвращаясь на поверхность, ты знаешь, что освободил не только семью Деверо," +
                 " но и себя от тяжкого бремени их проклятия.", URI.create("/photo/library.jpeg")));
 
-        mapOfConclusion.put("helpWithoutKnowledge", new Conclusion("Неудачное спасение", "Ты начинаешь выполнять ритуал, как описано в дневнике." +
+        mapOfConclusion.put(Callback_Constants.HELP_WITHOUT_KNOWLEDGE, new Conclusion("Неудачное спасение", "Ты начинаешь выполнять ритуал, как описано в дневнике." +
                 " Но твои знания оказываются неполными, и что-то идет не так." +
                 " Проклятие начинает усиливаться, и духи Деверо начинают превращаться в темные тени, испускающие ужасные крики." +
                 "Ты понимаешь, что сделал ошибку, не подготовившись должным образом. Твои попытки оказать помощь только усиливают мощь проклятия." +
@@ -47,7 +48,7 @@ public class ConclusionBase implements Database {
                 " Твоя решимость обернулась трагедией, и теперь твоя судьба стала частью бесконечного проклятия," +
                 " которое бережно охраняет заброшенный особняк Деверо.", URI.create("/photo/library.jpeg")));
 
-        mapOfConclusion.put("getBack", new Conclusion("Проклятие возрождается", "Решив отложить ритуал и вернуться" +
+        mapOfConclusion.put(Callback_Constants.GET_BACK, new Conclusion("Проклятие возрождается", "Решив отложить ритуал и вернуться" +
                 " на поверхность, ты чувствуешь, как образы духов семьи Деверо становятся нестабильными и зловещими." +
                 " Они не понимают, почему ты не помогаешь им, и начинают искажаться, их обличья становятся искаженными " +
                 "от гнева и обиды.\n" +
@@ -61,7 +62,7 @@ public class ConclusionBase implements Database {
                 " что твоя судьба теперь связана с этим местом навсегда.", URI.create("/photo/library.jpeg")));
 
 
-        mapOfConclusion.put("callForHelp", new Conclusion("Неудачное расследование", "Ты решаешь вернуться на поверхность и рассказать о своих находках специалистам." +
+        mapOfConclusion.put(Callback_Constants.CALL_FOR_HELP, new Conclusion("Неудачное расследование", "Ты решаешь вернуться на поверхность и рассказать о своих находках специалистам." +
                 " Однако, как только ты выходишь из подвала, дверь за тобой захлопывается, и особняк начинает разрушаться." +
                 " Ты едва успеваешь выбраться на улицу. Позже, исследовательская группа, которой ты сообщил о своих находках," +
                 " не находит ничего в руинах особняка, и твои слова воспринимаются как выдумка. Тебя все начали считать психически больным.", URI.create("/photo/library.jpeg")));

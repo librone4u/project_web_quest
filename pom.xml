@@ -32,7 +32,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>GameOfQuests</finalName>
+    <finalName>project_web_quest</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>

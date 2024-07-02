@@ -1,5 +1,6 @@
 package com.project_web_quest.controller;
 
+import com.project_web_quest.constants.Callback_Constants;
 import com.project_web_quest.games_base_question.mansion_of_sercrets.ConclusionBase;
 import com.project_web_quest.model.Question;
 import com.project_web_quest.service.StateProcessor;
@@ -27,7 +28,7 @@ public class MoS_Servlet extends HttpServlet {
         ConclusionBase conclusionBase = ConclusionBase.getInstance();
         Map<String, GameElement> mapOfConclusion = conclusionBase.getMap();
 
-        if(state.equals("playing")) {
+        if("playing".equals(state)) {
             if (mapOfConclusion.containsKey(callback)) {
                 state = "conclusion";
                 session.setAttribute("state", "conclusion");
@@ -36,18 +37,16 @@ public class MoS_Servlet extends HttpServlet {
                 Question question = (Question) questionBase.getElement(callback);
                 session.setAttribute("question", question);
                 switch (callback) {
-                    case "searchClues" -> {
+                    case Callback_Constants.SEARCH_CLUES -> {
                         session.setAttribute("knowledge", "true");
                     }
-                    case "enterVault" -> {
+                    case Callback_Constants.ENTER_VAULT -> {
                         Question questionExploreVault = (Question) questionBase.getElement("exploreVault");
                         Map<String, String> answers = questionExploreVault.getAnswers();
                         if (session.getAttribute("knowledge").equals("true")) {
-                            answers.put("help", "Помочь семье.");
-                            System.out.println("added help");
+                            answers.put(Callback_Constants.HELP_WITH_KNOWLEDGE, "Помочь семье.");
                         } else {
-                            answers.put("helpWithoutKnowledge", "Помочь семье.");
-                            System.out.println("added helpWithoutKnowledge");
+                            answers.put(Callback_Constants.HELP_WITHOUT_KNOWLEDGE, "Помочь семье.");
                         }
                         questionBase.changeQuestionByCallBack("exploreVault", questionExploreVault);
                     }
