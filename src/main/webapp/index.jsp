@@ -1,7 +1,7 @@
 <%@ page import="com.project_web_quest.games_base_question.GamesBase" %>
 <%@ page import="com.project_web_quest.model.GameDescription" %>
 <%@ page import="java.util.List" %>
-<%@ page import="com.project_web_quest.constants.State_Constants" %>
+<%@ page import="com.project_web_quest.constants.StateConstants" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     GamesBase base = GamesBase.getInstance();
@@ -25,14 +25,16 @@
                 <%}%>>
             <img src="<%=game.getGameLinkPhoto()%>" alt="<%=game.getGameFullName()%>">
             <div class="overlay">
-                <div class="text"><%=game.isReadyForPlay()%></div>
+                <div class="text"><%if(game.isAccess()){ %>Play<%}
+                                    else{%>Unavailable<%}%>
+                </div>
             </div>
         </div>
     </div>
     <%}%>
     <script>
         function play(link){
-            <%session.setAttribute("state", State_Constants.WELCOME);%>
+            <%session.setAttribute("state", StateConstants.WELCOME);%>
             window.location.href = link;
         }
     </script>

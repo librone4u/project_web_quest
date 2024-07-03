@@ -1,6 +1,6 @@
 package com.project_web_quest.games_base_question.mansion_of_sercrets;
 
-import com.project_web_quest.constants.Callback_Constants;
+import com.project_web_quest.constants.CallbackConstants;
 import com.project_web_quest.games_base_question.Database;
 import com.project_web_quest.model.Conclusion;
 import com.project_web_quest.model.GameElement;
@@ -22,7 +22,7 @@ public class ConclusionBase implements Database {
     private static void createMap() {
         mapOfConclusion = new HashMap<>();
 
-        mapOfConclusion.put(Callback_Constants.HELP_WITH_KNOWLEDGE, new Conclusion("Liberation of Souls", "Without hesitation, you decide to help the souls of the Devereaux family. " +
+        mapOfConclusion.put(CallbackConstants.HELP_WITH_KNOWLEDGE, new Conclusion("Liberation of Souls", "Without hesitation, you decide to help the souls of the Devereaux family. " +
                 "You follow the instructions you learned from ancient records," +
                 " and begin to perform the ritual. The altar is enveloped in a mystical light, " +
                 "and the air is filled with tension. The spirits start to shimmer more brightly, " +
@@ -39,7 +39,7 @@ public class ConclusionBase implements Database {
                 " Returning to the surface, you know that you have freed not only the Devereaux family," +
                 " but also yourself from the heavy burden of their curse.", URI.create("/photo/library.jpeg")));
 
-        mapOfConclusion.put(Callback_Constants.HELP_WITHOUT_KNOWLEDGE, new Conclusion("Unsuccessful Rescue", "You begin performing the ritual as described in the journal." +
+        mapOfConclusion.put(CallbackConstants.HELP_WITHOUT_KNOWLEDGE, new Conclusion("Unsuccessful Rescue", "You begin performing the ritual as described in the journal." +
                 " But your knowledge is incomplete, and something goes wrong." +
                 " The curse starts to intensify, and the Devereaux spirits begin to turn into dark shadows, emitting terrible screams." +
                 "You realize you made a mistake by not preparing properly. Your attempts to help only strengthen the power of the curse." +
@@ -48,7 +48,7 @@ public class ConclusionBase implements Database {
                 " Your determination turned into tragedy, and now your fate has become part of the endless curse," +
                 " which is carefully guarded by the abandoned Devereaux mansion.", URI.create("/photo/library.jpeg")));
 
-        mapOfConclusion.put(Callback_Constants.GET_BACK, new Conclusion("The Curse Revives", "Deciding to postpone the ritual and return" +
+        mapOfConclusion.put(CallbackConstants.GET_BACK, new Conclusion("The Curse Revives", "Deciding to postpone the ritual and return" +
                 " to the surface, you feel the images of the Devereaux family spirits becoming unstable and sinister." +
                 " They do not understand why you are not helping them and begin to distort, their forms becoming twisted" +
                 " with anger and resentment.\n" +
@@ -62,7 +62,7 @@ public class ConclusionBase implements Database {
                 " that your fate is now forever tied to this place.", URI.create("/photo/library.jpeg")));
 
 
-        mapOfConclusion.put(Callback_Constants.CALL_FOR_HELP, new Conclusion("Unsuccessful Investigation", "You decide to return to the surface and report your findings to the experts." +
+        mapOfConclusion.put(CallbackConstants.CALL_FOR_HELP, new Conclusion("Unsuccessful Investigation", "You decide to return to the surface and report your findings to the experts." +
                 " However, as soon as you leave the basement, the door slams shut behind you, and the mansion begins to collapse." +
                 " You barely manage to escape outside. Later, the research team you informed about your findings" +
                 " finds nothing in the ruins of the mansion, and your words are dismissed as fabrication. Everyone starts to consider you mentally ill.", URI.create("/photo/library.jpeg")));

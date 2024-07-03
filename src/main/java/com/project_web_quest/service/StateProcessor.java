@@ -1,17 +1,17 @@
 package com.project_web_quest.service;
 
-import com.project_web_quest.constants.State_Constants;
+import com.project_web_quest.constants.StateConstants;
 
 public class StateProcessor {
     public static String linkToJsp(String state){
         switch(state){
-            case State_Constants.WELCOME  -> {
+            case StateConstants.WELCOME  -> {
                 return "/MoS/MoS_welcome.jsp";
             }
-            case State_Constants.PLAYING, State_Constants.START -> {
+            case StateConstants.PLAYING, StateConstants.START -> {
                 return "/MoS/MoS.jsp";
             }
-            case State_Constants.CONCLUSION -> {
+            case StateConstants.CONCLUSION -> {
                 return "/MoS/MoS_conclusion.jsp";
             }
             default -> {
