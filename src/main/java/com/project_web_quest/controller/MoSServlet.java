@@ -1,6 +1,6 @@
 package com.project_web_quest.controller;
 
-import com.project_web_quest.constants.CallbackConstants;
+import com.project_web_quest.constants.QuestionCallbackConstants;
 import com.project_web_quest.constants.StateConstants;
 import com.project_web_quest.games_base_question.mansion_of_sercrets.ConclusionBase;
 import com.project_web_quest.model.Question;
@@ -44,23 +44,23 @@ public class MoSServlet extends HttpServlet {
     }
 
     private void handleCallBack(String callback, HttpSession session, QuestionBase questionBase){
-        if (CallbackConstants.SEARCH_CLUES.equals(callback)) {
+        if (QuestionCallbackConstants.SEARCH_CLUES.equals(callback)) {
             session.setAttribute("knowledge", "true");
-        } else if (CallbackConstants.ENTER_VAULT.equals(callback)) {
+        } else if (QuestionCallbackConstants.ENTER_VAULT.equals(callback)) {
             handleEnterVault(session, questionBase);
         }
     }
     private void handleEnterVault(HttpSession session, QuestionBase questionBase) {
-        Question questionExploreVault = (Question) questionBase.getElement(CallbackConstants.EXPLORE_VAULT);
+        Question questionExploreVault = (Question) questionBase.getElement(QuestionCallbackConstants.EXPLORE_VAULT);
         Map<String, String> answers = questionExploreVault.getAnswers();
 
         if ("true".equals(session.getAttribute("knowledge"))) {
-            answers.put(CallbackConstants.HELP_WITH_KNOWLEDGE, "Help family.");
+            answers.put(QuestionCallbackConstants.HELP_WITH_KNOWLEDGE, "Help family.");
         } else {
-            answers.put(CallbackConstants.HELP_WITHOUT_KNOWLEDGE, "Help family.");
+            answers.put(QuestionCallbackConstants.HELP_WITHOUT_KNOWLEDGE, "Help family.");
         }
 
-        questionBase.changeQuestionByCallBack(CallbackConstants.EXPLORE_VAULT, questionExploreVault);
+        questionBase.changeQuestionByCallBack(QuestionCallbackConstants.EXPLORE_VAULT, questionExploreVault);
     }
 }
 

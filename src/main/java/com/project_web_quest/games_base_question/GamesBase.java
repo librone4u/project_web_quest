@@ -19,21 +19,21 @@ public class GamesBase {
     private static List<GameDescription> initList(){
         List<GameDescription> list = new ArrayList<>();
 
-        GameDescription MoS = new GameDescription();
-        MoS.setGameFullName("The mystery of the Abandoned Mansion");
-        MoS.setGameShortName("MoS");
-        MoS.setGameLinkPhoto("photo/mansion.jpeg");
-        MoS.setGameLinkServlet("/TheMysteryOfTheAbandonedMansion");
-        MoS.setAccess(true);
-        list.add(MoS);
+        GameDescription mansionOfSecrets = new GameDescription();
+        mansionOfSecrets.setGameFullName("The mystery of the Abandoned Mansion");
+        mansionOfSecrets.setGameShortName("mansionOfSecrets");
+        mansionOfSecrets.setGameLinkPhoto("photo/mansion.jpeg");
+        mansionOfSecrets.setGameLinkServlet("/TheMysteryOfTheAbandonedMansion");
+        mansionOfSecrets.setAccess(true);
+        list.add(mansionOfSecrets);
 
-        GameDescription LSoA = new GameDescription();
-        LSoA.setGameFullName("The lost city of Atlantis");
-        LSoA.setGameShortName("LSoA");
-        LSoA.setGameLinkPhoto("photo/LCoA.jpeg");
-        LSoA.setGameLinkServlet(null);
-        LSoA.setAccess(false);
-        list.add(LSoA);
+        GameDescription lostCityOfAtlantis = new GameDescription();
+        lostCityOfAtlantis.setGameFullName("The lost city of Atlantis");
+        lostCityOfAtlantis.setGameShortName("lostCityOfAtlantis");
+        lostCityOfAtlantis.setGameLinkPhoto("photo/LCoA.jpeg");
+        lostCityOfAtlantis.setGameLinkServlet(null);
+        lostCityOfAtlantis.setAccess(false);
+        list.add(lostCityOfAtlantis);
 
         return list;
     }

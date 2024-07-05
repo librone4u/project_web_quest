@@ -1,6 +1,6 @@
 package com.project_web_quest.constants;
 
-public final class CallbackConstants {
+public final class QuestionCallbackConstants {
     public static final String SEARCH_CLUES = "searchClues";
     public static final String ENTER_VAULT = "enterVault";
     public static final String HELP_WITH_KNOWLEDGE = "help";
@@ -14,5 +14,5 @@ public final class CallbackConstants {
     public static final String SECOND_FLOOR = "secondFloor";
     public static final String ENTER_THE_AJAR_DOOR = "enterTheAjarDoor";
     public static final String EXPLORE_VAULT = "exploreVault";
-    private CallbackConstants() {}
+    private QuestionCallbackConstants() {}
 }
